@@ -1,0 +1,10 @@
+@import "../bower_components/bourbon/dist/bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+
+$base-font-family: "Helvetica";
+$base-font-color: green;
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+}
