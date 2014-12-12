@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
   <body ng-controller="QuotesController">
-
     <section ng-repeat="quote in quotes">
       <article ng-if="quoteIndex == $index" class="quote-item-container">
         {{quote.content}}
+        {{quote.author}}
       </article>
     </section>
 
