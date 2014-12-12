@@ -2,9 +2,35 @@
 @import "../bower_components/neat/app/assets/stylesheets/neat";
 
 $base-font-family: "Helvetica";
-$base-font-color: green;
+$base-font-color: black;
 
 body {
   color: $base-font-color;
   font-family: $base-font-family;
+}
+
+.quote-item-container {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+}
+
+.green {
+  background: green;
+}
+
+.orange {
+  background: orange;
+}
+
+.purple {
+  background: purple;
+}
+
+.slide.ng-enter,
+.slide.ng-leave {
+  -webkit-transition: 0.5s linear all;
+          transition: 0.5s linear all;
 }
