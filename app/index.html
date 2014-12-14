@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
-  <body ng-controller="QuotesController">
+  <body ng-controller="QuotesController" ng-click="nextQuote()">
     <section ng-repeat="quote in quotes">
-      <article ng-if="quoteIndex == $index" class="quote-item-container">
-        {{quote.content}}
-        {{quote.author}}
-      </article>
+      <div class="quote-container {{quote.style}}">
+        <article ng-if="quoteIndex == $index" class="quote-item-container">
+          <blockquote>
+            <p>{{quote.content}}</p>
+            <footer>{{quote.author}}</footer>
+          </blockquote>
+        </article>
+      </div>
     </section>
-
-    <button ng-click="nextQuote()">See next quote</button>
-
 
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -24,7 +25,6 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
 
     <script src="scripts/app.js"></script>
-    <script src="scripts/events.js"></script>
     <script src="scripts/controllers/quotes.js"></script>
   </body>
 </html>

@@ -2,11 +2,13 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
   $scope.quotes = [
     {
       author: "Jeff Chang",
-      content: "Cultural change is often the dress rehearsal for political change."
+      content: "Cultural change is often the dress rehearsal for political change.",
+      style: "first"
     },
     {
       author: "Thomas Jefferson",
-      content: "Do you want to know who you are? Don't ask. Act! Action will delineate and define you."
+      content: "Do you want to know who you are? Don't ask. Act! Action will delineate and define you.",
+      style: "second"
     },
     {
       author: "Oprah Winfrey",

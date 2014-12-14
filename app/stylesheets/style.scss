@@ -4,33 +4,36 @@
 $base-font-family: "Helvetica";
 $base-font-color: black;
 
+html {
+  height: 100%;
+}
+
 body {
   color: $base-font-color;
   font-family: $base-font-family;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.quote-container {
+  @include position(absolute, 0px 0px 0px 0px);
 }
 
 .quote-item-container {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.green {
+.first {
   background: green;
+  color: white
 }
 
-.orange {
-  background: orange;
-}
-
-.purple {
+.second {
   background: purple;
-}
-
-.slide.ng-enter,
-.slide.ng-leave {
-  -webkit-transition: 0.5s linear all;
-          transition: 0.5s linear all;
+  color: white
 }
