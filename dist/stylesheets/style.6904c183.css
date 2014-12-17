@@ -1,0 +1,65 @@
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+/* line 2, ../../bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 7, ../../bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 12, ../../app/stylesheets/style.scss */
+html {
+  height: 100%;
+}
+
+/* line 16, ../../app/stylesheets/style.scss */
+body {
+  color: black;
+  font-family: "Helvetica";
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 25, ../../app/stylesheets/style.scss */
+.quote-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+@media screen and (min-width: 40em) {
+  /* line 25, ../../app/stylesheets/style.scss */
+  .quote-container {
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 33, ../../app/stylesheets/style.scss */
+  .quote-container.long {
+    width: 840px;
+  }
+}
+
+/* line 40, ../../app/stylesheets/style.scss */
+.quote-item-container {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-40%);
+  transform: translateY(-40%);
+}
+
+/* line 46, ../../app/stylesheets/style.scss */
+.quote-item-container blockquote p {
+  font-family: Georgia, serif;
+  font-size: 2.0em;
+  line-height: 1.4;
+}
