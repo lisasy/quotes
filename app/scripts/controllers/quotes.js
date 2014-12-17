@@ -20,7 +20,8 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
     },
     {
       author: "Lao Tzu",
-      content: "I have three precious things which I host fast and prize. The first is gentleness; the second is frugality; the third is humility, which keeps me from putting myself before others. Be gentle and you can be bold; be frugal and you can be liberal; avoid putting yourself before others and you can become a leader among men."
+      content: "I have three precious things which I host fast and prize. The first is gentleness; the second is frugality; the third is humility, which keeps me from putting myself before others. Be gentle and you can be bold; be frugal and you can be liberal; avoid putting yourself before others and you can become a leader among men.",
+      style: "long"
     },
     {
       author: "Pat Obuchowski",
@@ -76,7 +77,8 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
     },
     {
       author: "C.S. Lewis",
-      content: "To love at all is to be vulnerable. Love anything, and your heart will certainly be wrung and possibly broken. If you want to make sure of keeping it intact, you must give your heart to no one, not even to an animal. Wrap it carefully round with hobbies and little luxuries; avoid all entanglements; lock it up safe in the casket or coffin of your selfishness. But in that casket - safe, dark, motionless, airless - it will change. It will not be broken; it will become unbreakable, impenetrable, irredeemable."
+      content: "To love at all is to be vulnerable. Love anything, and your heart will certainly be wrung and possibly broken. If you want to make sure of keeping it intact, you must give your heart to no one, not even to an animal. Wrap it carefully round with hobbies and little luxuries; avoid all entanglements; lock it up safe in the casket or coffin of your selfishness. But in that casket - safe, dark, motionless, airless - it will change. It will not be broken; it will become unbreakable, impenetrable, irredeemable.",
+      style: "long"
     },
     {
       author: "Steven Johnson",
@@ -84,7 +86,7 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
     },
     {
       content: "The best journeys answer questions that in the beginning you didn't even think to ask.",
-      "source": "180 Degrees South"
+      author: "180 Degrees South"
     },
     {
       content: "Say yes, and you'll figure it out afterwards.",
@@ -99,9 +101,9 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
       author: "Frank Ocean"
     },
     {
-      content: "Your first kiss isn't as important as your last. The math test really didn't matter. The pie really did. The stuff you're good at and the stuff you're bad at are just different parts of the same thing. Same goes for the people you love and the people you don't -- and the people who love you and the people who don't. The only thing tha mattered was that you cared about a few people. Life is really, really short.",
+      content: "Your first kiss isn't as important as your last. The math test really didn't matter. The pie really did. The stuff you're good at and the stuff you're bad at are just different parts of the same thing. Same goes for the people you love and the people you don't -- and the people who love you and the people who don't. The only thing that mattered was that you cared about a few people. Life is really, really short.",
       author: "Ethan Wate",
-      "source": "Beautiful Chaos"
+      style: "long"
     },
     {
       content: "As time goes on, you'll understand. What lasts, lasts; what doesn't, doesn't. Time solves most things. And what time can't solve, you have to solve yourself.",
@@ -113,7 +115,8 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
     },
     {
       content: "Opening your heart and being courageous and telling people that you care about them or like them or that you think they're special only makes you a better, bigger, kinder, softwer, more loving person and only attracts more love in your life.",
-      author: "Amy Poehler"
+      author: "Amy Poehler",
+      style: "long"
     },
     {
       author: "Georgia O'Keefe",
@@ -141,7 +144,8 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
     },
     {
       author: "Neil Gaiman",
-      content: "I’ve been making a list of the things they don’t teach you at school. They don’t teach you how to love somebody. They don’t teach you how to be famous. They don’t teach you how to be rich or how to be poor. They don’t teach you how to walk away from someone you don’t love any longer. They don’t teach you how to know what’s going on in someone else’s mind. They don’t teach you what to say to someone who’s dying. They don’t teach you anything worth knowing."
+      content: "I’ve been making a list of the things they don’t teach you at school. They don’t teach you how to love somebody. They don’t teach you how to be famous. They don’t teach you how to be rich or how to be poor. They don’t teach you how to walk away from someone you don’t love any longer. They don’t teach you how to know what’s going on in someone else’s mind. They don’t teach you what to say to someone who’s dying. They don’t teach you anything worth knowing.",
+      style: "long"
     }
   ];
 
@@ -156,3 +160,4 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
     }
   };
 }]);
+
