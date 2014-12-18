@@ -255,12 +255,13 @@ module.exports = function (grunt) {
       }
     },
     uglify: {
-      dist: {
-        files: {
-          '<%= yeoman.dist %>/scripts/app.js': [
-            '<%= yeoman.dist %>/scripts/{,*/}.js'
-          ]
-        }
+      my_target: {
+        files: [{
+          expand: true,
+          cwd: 'src',
+          src: 'scripts/*.js',
+          dest: 'dist/scripts/app.js'
+        }]
       }
     },
     concat: {
