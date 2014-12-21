@@ -8,14 +8,20 @@ var quotesApp = angular.module("quotesApp", [
 quotesApp.controller("QuotesController", ["$scope", function($scope) {
   $scope.quotes = [
     {
+      author: "Sigmund Freud",
+      content: "Out of your vulnerabilities will come your strength."
+    },
+    {
+      author: "Anais Nin",
+      content: "And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom.",
+    },
+    {
       author: "Jeff Chang",
-      content: "Cultural change is often the dress rehearsal for political change.",
-      style: "first"
+      content: "Cultural change is often the dress rehearsal for political change."
     },
     {
       author: "Thomas Jefferson",
-      content: "Do you want to know who you are? Don't ask. Act! Action will delineate and define you.",
-      style: "second"
+      content: "Do you want to know who you are? Don't ask. Act! Action will delineate and define you."
     },
     {
       author: "Oprah Winfrey",

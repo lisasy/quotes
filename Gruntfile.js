@@ -19,8 +19,11 @@ module.exports = function (grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all'],
+        files: ['<%= uglify.build.src %>'],
+        tasks: [
+          'newer:jshint:all',
+          'uglify'
+        ],
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
@@ -140,7 +143,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Automatically inject Bower components into the app
     wiredep: {
       app: {
         src: ['<%= yeoman.app %>/index.html'],
@@ -226,13 +228,11 @@ module.exports = function (grunt) {
     },
 
     uglify: {
-      my_target: {
-        files: [{
-          expand: true,
-          cwd: 'src',
-          src: 'scripts/*.js',
-          dest: 'dist/scripts/app.js'
-        }]
+      build: {
+        src: [
+          '<%= yeoman.app %>/scripts/*.js'
+        ],
+        dest: '<%= yeoman.dist %>/scripts/app.js'
       }
     },
 

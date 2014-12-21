@@ -60,6 +60,11 @@ body {
 /* line 46, ../../app/stylesheets/style.scss */
 .quote-item-container blockquote p {
   font-family: Georgia, serif;
-  font-size: 2.0em;
-  line-height: 1.4;
+}
+@media screen and (min-width: 40em) {
+  /* line 46, ../../app/stylesheets/style.scss */
+  .quote-item-container blockquote p {
+    font-size: 2.0em;
+    line-height: 1.4;
+  }
 }
