@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var request = require('request');
+
+if (process.env.QUOTE_SITE_URL != undefined) {
+  var url = process.env.QUOTE_SITE_URL;
+} else {
+  var url = "http://localhost:5000";
+}
+
+request.get(url, function(error, response, body) {
+  if (error != undefined) {
+   console.log("error pinging " + url);
+  } else {
+   console.log("ping to " + url + " successful");
+  }
+});
