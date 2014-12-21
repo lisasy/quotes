@@ -34,22 +34,24 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
+  padding-top: 1em;
 }
 @media screen and (min-width: 40em) {
   /* line 25, ../../app/stylesheets/style.scss */
   .quote-container {
     width: 640px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 33, ../../app/stylesheets/style.scss */
+  /* line 35, ../../app/stylesheets/style.scss */
   .quote-container.long {
     width: 840px;
   }
 }
 
-/* line 40, ../../app/stylesheets/style.scss */
+/* line 42, ../../app/stylesheets/style.scss */
 .quote-item-container {
   position: absolute;
   top: 40%;
@@ -57,12 +59,13 @@ body {
   transform: translateY(-40%);
 }
 
-/* line 46, ../../app/stylesheets/style.scss */
+/* line 48, ../../app/stylesheets/style.scss */
 .quote-item-container blockquote p {
   font-family: Georgia, serif;
+  font-size: 1.5em;
 }
 @media screen and (min-width: 40em) {
-  /* line 46, ../../app/stylesheets/style.scss */
+  /* line 48, ../../app/stylesheets/style.scss */
   .quote-item-container blockquote p {
     font-size: 2.0em;
     line-height: 1.4;
