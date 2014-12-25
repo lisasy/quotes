@@ -177,8 +177,6 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
     }
   ];
 
-  console.log("quotes", $scope.quotes);
-
   $scope.quoteIndex = 0;
   $scope.quote = {};
 
