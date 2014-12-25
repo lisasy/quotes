@@ -154,8 +154,30 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
       author: "Neil Gaiman",
       content: "I’ve been making a list of the things they don’t teach you at school. They don’t teach you how to love somebody. They don’t teach you how to be famous. They don’t teach you how to be rich or how to be poor. They don’t teach you how to walk away from someone you don’t love any longer. They don’t teach you how to know what’s going on in someone else’s mind. They don’t teach you what to say to someone who’s dying. They don’t teach you anything worth knowing.",
       style: "long"
+    },
+    {
+      author: "Isaac Asimov",
+      content : "Violence is the last refuge of incompetence"
+    },
+    {
+      author: "Margaret Mead",
+      content : "Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has."
+    },
+    {
+      author : "Martin Luther King Jr.",
+      content : "The arc of the moral universe is long, but it bends towards justice"
+    },{
+      author : "Theodore Roosevelt",
+      content : "It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat.",
+      style : "long"
+    },
+    {
+      author : "Bredon Stanton",
+      content : " Don’t wait for something to be fully formed in your head to start on it. Just start, and then work it out as you go."
     }
   ];
+
+  console.log("quotes", $scope.quotes);
 
   $scope.quoteIndex = 0;
   $scope.quote = {};
