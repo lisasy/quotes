@@ -12,6 +12,14 @@ quotesApp.controller("QuotesController", ["$scope", function($scope) {
       content: "Out of your vulnerabilities will come your strength."
     },
     {
+      author: "Rumi",
+      content: "Let yourself be silently drawn by the strange pull of what you really love. It will not lead you astray."
+    },
+    {
+      author: "Edgar Degas",
+      content: "Art is not what you see, but what you make others see."
+    },
+    {
       author: "Anais Nin",
       content: "And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom.",
     },
